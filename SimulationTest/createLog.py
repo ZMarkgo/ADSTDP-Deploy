@@ -61,8 +61,6 @@ def restoreLogFile(logfile, logfileOrignal):
 
 
 def main():
-    # logfilePath = r"D:\Learning\Autonomous-driving-safety-test-demonstration-platform\wj\src\main\resources\SimulationTest\log\log.txt"
-    # logfileOrignal = r"D:\Learning\Autonomous-driving-safety-test-demonstration-platform\wj\src\main\resources\SimulationTest\log\log-original.txt"
     logfilePath = "log/log.txt"
     logfileOrignal = "log/log-original.txt"
     if len(sys.argv) == 3:
