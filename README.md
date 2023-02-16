@@ -1,6 +1,8 @@
 # ADSTDP-Deploy
 
-## 仓库中文件说明
+README.md状态：未同步
+
+## 仓库中的文件说明
 
 这个仓库中包含ADSTDP项目的部署文件：
 - dist文件夹：前端项目的部署文件，通过nginx部署
