@@ -58,10 +58,50 @@ nginx -s quit
 
 ### 2. 使用java运行后端：
 
+#### 方法一：
+
 在`.jar`文件所在的目录下运行它：
 
 ```Shell
 java -jar wj-1.0.0.jar
+```
+
+#### 方法二：
+
+让jar包不挂断的运行可以，在runjar.sh所在目录下运行次脚本：
+
+```Shell
+chmod +x ./runjar.sh   #赋予脚本执行权限
+./runjar.sh            #执行脚本
+```
+
+在这个脚本内部执行的命令大致如下：
+
+```Shell
+nohup java -jar wj-1.0.0.jar > log/runjar.out 2>&1 &;
+```
+- 总体而言，该命令可以在退出帐户/关闭终端之后继续运行相应的进程
+- nohup是no hang up的缩写，就是不挂断的意思，这个命令会忽略所有挂断（SIGHUP）信号。
+- `> log/runjar.out 2>&1`命令中：
+  - 0：stdin (standard input)
+  - 1：stdout (standard output)
+  - 2：stderr (standard error)
+  - `2>&1`是将标准错误（2）重定向到标准输出（&1），标准输出（&1）再被重定向输入到log/runjar.out文件中
+- 尾部添加了`&` 表示后台运行nohup命令，即使关掉终端，命令也不会结束。
+
+可以打开log/runjar.out查看jar输出。
+
+关闭运行的jar包：
+- 先找到进程，使用如下命令：
+
+```Shell
+ps -aux | grep java
+```
+- 找到`java -jar wj-1.0.0.jar`的进程号
+- 然后杀死进程：
+  
+```Shell
+kill -9 进程号
 ```
 
 在前后端都运行的情况下，进入浏览器访问服务器IP即可。
