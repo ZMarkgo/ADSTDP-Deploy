@@ -1,6 +1,6 @@
 #! /bin/bash
 # Must be whole path
-usr="/home/vm2"
+usr="/home/zmark"
 pyScriptPath="${usr}/ADSTestProject/ADSTDP-Deploy/SimulationTest/createLog.py"
 runpyOutPath="${usr}/ADSTestProject/ADSTDP-Deploy/log/runpy.out"
 logfilePath="${usr}/ADSTestProject/ADSTDP-Deploy/log/log.txt" 
