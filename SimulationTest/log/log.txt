@@ -1,0 +1,66 @@
+Test log
+Start test...
+[LogInfo] 9 0 0 0 0 1
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 1 0 0 1 6
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 2 0 0 2 9
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 3 0 0 3 2
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 4 0 0 4 5
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 5 0 0 5 8
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 6 0 0 6 3
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 7 0 0 7 4
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+[LogInfo] 9 8 0 0 8 7
+--update:0
+--update:1
+--update:2
+--update:3
+--update:4
+--update:5
+Test ended!
