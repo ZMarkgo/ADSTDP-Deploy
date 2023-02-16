@@ -1,5 +1,5 @@
-logfilePath: /home/zmark/coding/Autonomous-driving-safety-test-demonstration-platform/wj/SimulationTest/log/log.txt
-logfileOrignal: /home/zmark/coding/Autonomous-driving-safety-test-demonstration-platform/wj/SimulationTest/log/log-original.txt
+logfilePath: /home/zmark/ADSTestProject/ADSTDP-Deploy/log/log.txt
+logfileOrignal: /home/zmark/ADSTestProject/ADSTDP-Deploy/SimulationTest/log-original.txt
 --update:0
 --update:1
 --update:2
