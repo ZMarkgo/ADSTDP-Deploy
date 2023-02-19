@@ -1,6 +1,6 @@
 # ADSTDP-Deploy
 
-## 仓库中的文件说明
+## 一、仓库中的文件说明
 
 `README.md`：此文件
 
@@ -44,14 +44,14 @@ nohup java -jar wj-1.0.0.jar > log/runjar.out 2>&1 &;
 - 尾部添加了`&` 表示后台运行nohup命令，即使关掉终端，命令也不会结束。
 
 
-## 项目部署指南：
+## 二、项目部署指南：
 
 1. 打包前端项目和后端项目，将dist文件夹和jar包更新到此仓库。
 2. 在服务器上从github拉取新的部署文件
-3. 使用Nginx运行前端
-4. 使用java运行后端jar包
-5. 检查MySQL服务状态
-6. 检查Redis服务状态
+3. 在服务器上使用Nginx运行前端
+4. 在服务器上使用java运行后端jar包
+5. 检查服务器中MySQL服务状态
+6. 检查服务器中Redis服务状态
 
 ### 1. 打包项目
 
@@ -68,9 +68,9 @@ nohup java -jar wj-1.0.0.jar > log/runjar.out 2>&1 &;
 git pull
 ```
 
-### 3. 使用Nginx运行前端：
+### 3. 在服务器上使用Nginx运行前端：
 
-先检查配置文件：
+先检查服务器中Nginx的配置文件：
 - 打开Nginx配置文件：
 ```Shell
 sudo vim /etc/nginx/sites-enabled/default
@@ -94,31 +94,9 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 > 可以使用`nginx -s quit`命令关闭Nginx：
 
 
-### 4. 使用java运行后端：
+### 4. 在服务器上使用java运行后端jar包：
 
-#### 方法一：
-
-在`.jar`文件所在的目录下直接运行jar包：
-
-```Shell
-java -jar wj-1.0.0.jar
-```
-
-#### 方法二：
-
-让jar包不挂断的运行可以，在runjar.sh所在目录下运行次脚本：
-
-```Shell
-chmod +x ./runjar.sh   #赋予脚本执行权限
-./runjar.sh            #执行脚本
-```
-
-> 可以打开log/runjar.out查看jar输出。
-
-> 在前后端都运行的情况下，进入浏览器访问服务器IP即可。
-
-
-关闭运行的jar包：
+首先，关闭运行的旧版本jar包：
 - 先找到进程，使用如下命令：
 ```Shell
 ps -aux | grep java
@@ -127,4 +105,85 @@ ps -aux | grep java
 - 然后杀死进程：
 ```Shell
 kill -9 进程号
+```
+
+然后，重新在`runjar.sh`所在目录下运行此脚本：
+
+```Shell
+chmod +x ./runjar.sh   #赋予脚本执行权限
+./runjar.sh            #执行脚本
+```
+
+> 可以打开log/runjar.out查看jar输出。
+
+### 5. 检查服务器中MySQL服务状态
+
+使用如下命令检查MySQL服务状态
+```Shell
+systemctl status mysql.service
+```
+
+显示的信息中有`Active:active(running)`代表MySQL已启动，按q退出。
+
+### 6. 检查服务器中Redis服务状态
+
+先验证redis是否启动：
+```Shell
+redis-cli
+127.0.0.1:6379> ping
+PONG
+```
+
+解释：
+- 执行命令`redis-cli`将打开一个 redis 提示符`redis 127.0.0.1:6379>`，在提示符中，127.0.0.1 是机器的 IP 地址，6379 是 Redis 服务器运行的端口。键入PING 命令。返回 PONG 表示 Redis启动成功
+
+
+
+如果redis未启动，可以使用`redis-server`命令启动redis：
+```Shell
+redis-server
+```
+
+再刷新redis，在redis提示符下输入`FLUSHALL`：
+```Shell
+redis-cli
+127.0.0.1:6379> FLUSHALL
+OK
+```
+
+在redis提示符下输入输入`quit`退出redis-cli。
+
+> 在前后端都运行的情况下，进入浏览器访问服务器IP即可。
+
+## 三、关闭项目
+
+### 1. 关闭Nginx
+使用如下命令可以关闭Nginx：
+
+```Shell
+nginx -s stop
+```
+
+### 2. 关闭jar包
+
+先找到进程，使用如下命令：
+```Shell
+ps -aux | grep java
+```
+
+找到`java -jar wj-1.0.0.jar`的进程号
+
+然后杀死进程：
+```Shell
+kill -9 进程号
+```
+
+### 3. 关闭redis：
+
+先执行命令`redis-cli`，再执行`SHUTDOWN`关闭redis服务，最后执行`exit`命令退出redis提示符：
+
+```Shell
+redis-cli
+127.0.0.1:6379> SHUTDOWN
+not connected> exit
 ```
