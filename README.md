@@ -43,6 +43,11 @@ nohup java -jar wj-1.0.0.jar > log/runjar.out 2>&1 &;
   - `2>&1`是将标准错误（2）重定向到标准输出（&1），标准输出（&1）再被重定向输入到log/runjar.out文件中
 - 尾部添加了`&` 表示后台运行nohup命令，即使关掉终端，命令也不会结束。
 
+`videos`文件夹：
+- 存放视频资源，需要使用文件夹分类
+- 目前分为：
+  - 场景视频scenario_videos
+  - 事故视频accident_videos
 
 ## 二、项目部署指南：
 
