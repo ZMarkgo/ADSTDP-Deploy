@@ -8,7 +8,7 @@ LOG = _Logger.getLogger("check")
 # filemode表示文件打开模式，默认为’a’，即追加模式；可以设为’w’，每次写日志会覆盖之前的日志
 _Logger.basicConfig(level = _Logger.DEBUG)
                     # filemode='w',
-                    # filename = r"D:\Learning\Autonomous-driving-safety-test-demonstration-platform\wj\SimulationTest\log\checklog.txt")
+                    # filename = r"D:\Learning\Autonomous-driving-safety-test-demonstration-platform\wj\local_test\log\checklog.txt")
 
 
 def Check_Weather(weather):
@@ -35,8 +35,8 @@ def Check_Time(time):
         raise ValueError("Check Time error\n {}".format(str(e)))
 
 def Check_Map(map):
-    return
-    map_file = os.listdir("map_file")
+    map_file_path = os.path.dirname(__file__) + os.sep + "map_file"
+    map_file = os.listdir(map_file_path)
     key_lists = ["id", "name", "parameterType"]
     for key in key_lists:
         if key not in map.keys():
@@ -291,7 +291,7 @@ def main():
         print(False)
 
 def test():
-    seedDir = "D:/Learning/Autonomous-driving-safety-test-demonstration-platform/wj/SimulationTest/scenarios"
+    seedDir = "D:/Learning/Autonomous-driving-safety-test-demonstration-platform/wj/local_test/resources/scenarios_userupload"
     checkDir(seedDir)
 
 # test()
