@@ -2,6 +2,30 @@
 
 ## 一、仓库中的文件说明
 
+此仓库的文件夹层级和项目中`wj/local_test`的层级一致，这样可以简化Path类的路径配置。
+
+```txt
+D:.
+├─dist
+│  └─static
+│      ├─css
+│      ├─fonts
+│      ├─img
+│      │  └─carousel
+│      └─js
+├─log
+├─pyscript
+├─resources
+│  ├─accidents_library
+│  ├─scenarios_library
+│  ├─scenarios_userupload
+│  └─videos
+│      ├─accident_videos
+│      └─scenario_videos
+└─test
+```
+
+
 `README.md`：此文件
 
 ADSTDP项目的部署文件：
