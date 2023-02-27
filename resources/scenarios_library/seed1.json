@@ -3,13 +3,13 @@
     "vseMetadata": {
         "cameraSettings": {
             "position": {
-                "x": 282.731292724609,
-                "y": 133.126342773438,
-                "z": -111.986839294434
+                "x": 299.412872314453,
+                "y": 186.595458984375,
+                "z": 15.2114486694336
             },
             "rotation": {
-                "x": 90,
-                "y": 36.0000038146973,
+                "x": 45.0000038146973,
+                "y": 226.799942016602,
                 "z": 0
             }
         }
@@ -25,7 +25,7 @@
         "year": 2021,
         "month": 9,
         "day": 27,
-        "hour": 18,
+        "hour": 12,
         "minute": 0,
         "second": 0
     },
@@ -37,907 +37,35 @@
     "agents": [
         {
             "id": "73805704-1e46-4eb6-b5f9-ec2244d5951e",
-            "uid": "69e54ebd-8589-4407-b598-7e93cc65dc31",
+            "uid": "2339686e-b63c-444a-ac88-8c4accc3adaf",
             "variant": "Lincoln2017MKZ",
             "type": 1,
             "parameterType": "vehicle",
             "transform": {
                 "position": {
-                    "x": 0.627183198928833,
-                    "y": -1.89267158508301,
-                    "z": 1.4380134344101
+                    "x": -33.8900299072266,
+                    "y": -1.55013608932495,
+                    "z": -13.5360126495361
                 },
                 "rotation": {
-                    "x": 359.846435546875,
-                    "y": 194.764617919922,
-                    "z": -1.66753266750419e-09
+                    "x": 1.41993820667267,
+                    "y": 104.916297912598,
+                    "z": 5.33772350763684E-08
                 }
             },
             "sensorsConfigurationId": "2e9095fa-c9b9-4f3f-8d7d-65fa2bb03921",
             "destinationPoint": {
                 "position": {
-                    "x": 344.205322265625,
-                    "y": -7.51718044281006,
-                    "z": -79.555046081543
+                    "x": 355.478210449219,
+                    "y": -4.81986284255981,
+                    "z": -49.1222839355469
                 },
                 "rotation": {
-                    "x": 0.166705310344696,
-                    "y": 14.825291633606,
-                    "z": 5.00260100011474e-09
+                    "x": 359.834594726563,
+                    "y": 195.042953491211,
+                    "z": 359.582733154297
                 }
             }
-        },
-        {
-            "uid": "287a5834-a16d-4ed7-9f73-837de39c9241",
-            "variant": "Bicyclist",
-            "type": 2,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": 12.9222021102905,
-                    "y": -2.41583824157715,
-                    "z": 2.374844789505
-                },
-                "rotation": {
-                    "x": 0.283402889966965,
-                    "y": 13.4609327316284,
-                    "z": 3.33509420080702e-09
-                }
-            },
-            "behaviour": {
-                "name": "NPCWaypointBehaviour",
-                "parameters": {
-                    "isLaneChange": false,
-                    "maxSpeed": 0
-                }
-            },
-            "color": {
-                "r": 0,
-                "g": 0.082352913916111,
-                "b": 0.356862723827362
-            },
-            "waypoints": []
-        },
-        {
-            "uid": "3a95dbcc-7b6f-4770-ad55-d3560877ae72",
-            "variant": "BoxTruck",
-            "type": 2,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": 9.94325351715088,
-                    "y": -2.13388133049011,
-                    "z": 3.90731549263
-                },
-                "rotation": {
-                    "x": 359.957550048828,
-                    "y": 13.597279548645,
-                    "z": 4.16881779097267e-10
-                }
-            },
-            "behaviour": {
-                "name": "NPCWaypointBehaviour",
-                "parameters": {
-                    "isLaneChange": false,
-                    "maxSpeed": 0
-                }
-            },
-            "color": {
-                "r": 0.943396210670471,
-                "g": 0.943396210670471,
-                "b": 0.943396210670471
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": 13.9140157699585,
-                        "y": -2.12542629241943,
-                        "z": 20.2949867248535
-                    },
-                    "angle": {
-                        "x": 0.177602514624596,
-                        "y": 14.2955341339111,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": 18.4969596862793,
-                        "y": -2.18295836448669,
-                        "z": 38.2804489135742
-                    },
-                    "angle": {
-                        "x": 0.177602514624596,
-                        "y": 14.2955341339111,
-                        "z": 0
-                    },
-                    "waitTime": 40,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "985b957c-566a-49c2-985c-349cfe515281",
-            "variant": "Hatchback",
-            "type": 2,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": 28.8560600280762,
-                    "y": -2.68370485305786,
-                    "z": -30.7966785430908
-                },
-                "rotation": {
-                    "x": 1.08440256118774,
-                    "y": 103.56266784668,
-                    "z": 5.33704067606777e-08
-                }
-            },
-            "behaviour": {
-                "name": "NPCWaypointBehaviour",
-                "parameters": {
-                    "isLaneChange": false,
-                    "maxSpeed": 0
-                }
-            },
-            "color": {
-                "r": 0.00240299617871642,
-                "g": 0.18620178103447,
-                "b": 0.50943398475647
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": 55.0119514465332,
-                        "y": -3.07281303405762,
-                        "z": -34.2599487304688
-                    },
-                    "angle": {
-                        "x": 0.845923244953156,
-                        "y": 104.873741149902,
-                        "z": -2.66833311002301e-08
-                    },
-                    "waitTime": 0,
-                    "speed": 10,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": 318.286376953125,
-                        "y": -7.09488105773926,
-                        "z": -104.182662963867
-                    },
-                    "angle": {
-                        "x": 0.845923244953156,
-                        "y": 104.873741149902,
-                        "z": -2.66833311002301e-08
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": [
-                            {
-                                "typeName": "WaitTime",
-                                "parameters": {
-                                    "value": 30
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "920050a7-cfd8-4bd9-80d4-9a65582887bf",
-            "variant": "Jeep",
-            "type": 2,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -34.5435523986816,
-                    "y": -1.53406143188477,
-                    "z": -13.3619251251221
-                },
-                "rotation": {
-                    "x": 1.41993844509125,
-                    "y": 104.916297912598,
-                    "z": 0
-                }
-            },
-            "behaviour": {
-                "name": "NPCWaypointBehaviour",
-                "parameters": {
-                    "isLaneChange": false,
-                    "maxSpeed": 0
-                }
-            },
-            "color": {
-                "r": 1,
-                "g": 0.442666590213776,
-                "b": 0.251999914646149
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": 23.932975769043,
-                        "y": -2.57453441619873,
-                        "z": -29.6090641021729
-                    },
-                    "angle": {
-                        "x": 0.869067907333374,
-                        "y": 104.940704345703,
-                        "z": -2.66834963014162e-08
-                    },
-                    "waitTime": 0,
-                    "speed": 10,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": 315.726196289063,
-                        "y": -7.15569591522217,
-                        "z": -107.471267700195
-                    },
-                    "angle": {
-                        "x": 0.869067907333374,
-                        "y": 104.940704345703,
-                        "z": -2.66834963014162e-08
-                    },
-                    "waitTime": 0,
-                    "speed": 10,
-                    "trigger": {
-                        "effectors": [
-                            {
-                                "typeName": "WaitTime",
-                                "parameters": {
-                                    "value": 20
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "496b3465-98ff-4489-a261-bd03508c6138",
-            "variant": "SUV",
-            "type": 2,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -36.9861602783203,
-                    "y": -1.58383405208588,
-                    "z": -16.7652225494385
-                },
-                "rotation": {
-                    "x": 1.5296585559845,
-                    "y": 104.806564331055,
-                    "z": 1.06759749485263e-07
-                }
-            },
-            "behaviour": {
-                "name": "NPCWaypointBehaviour",
-                "parameters": {
-                    "isLaneChange": false,
-                    "maxSpeed": 0
-                }
-            },
-            "color": {
-                "r": 0.0141509473323822,
-                "g": 0.249999970197678,
-                "b": 0.0235849004238844
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": -23.6832008361816,
-                        "y": -1.85487842559814,
-                        "z": -20.7807426452637
-                    },
-                    "angle": {
-                        "x": 0.179795652627945,
-                        "y": 156.796661376953,
-                        "z": 3.33506999794508e-09
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": -19.1289215087891,
-                        "y": -1.89115166664124,
-                        "z": -31.4049606323242
-                    },
-                    "angle": {
-                        "x": 359.899200439453,
-                        "y": 194.780563354492,
-                        "z": 2.50129406076383e-09
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 2,
-                    "position": {
-                        "x": -26.6879634857178,
-                        "y": -1.83902764320374,
-                        "z": -60.0541229248047
-                    },
-                    "angle": {
-                        "x": 359.899200439453,
-                        "y": 194.780563354492,
-                        "z": 2.50129406076383e-09
-                    },
-                    "waitTime": 30,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "b169f98c-9440-4e45-97fb-34495ceb1f02",
-            "variant": "SchoolBus",
-            "type": 2,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -1.86750185489655,
-                    "y": -1.91451442241669,
-                    "z": 4.83238172531128
-                },
-                "rotation": {
-                    "x": 359.866729736328,
-                    "y": 195.256484985352,
-                    "z": -1.66753100216965e-09
-                }
-            },
-            "behaviour": {
-                "name": "NPCWaypointBehaviour",
-                "parameters": {
-                    "isLaneChange": false,
-                    "maxSpeed": 0
-                }
-            },
-            "color": {
-                "r": 0.972549021244049,
-                "g": 0.823529481887817,
-                "b": 0
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": -7.83191537857056,
-                        "y": -1.96645081043243,
-                        "z": -10.9314308166504
-                    },
-                    "angle": {
-                        "x": 0.21677340567112,
-                        "y": 158.345413208008,
-                        "z": -3.33507710337244e-09
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": -2.49442291259766,
-                        "y": -2.02117562294006,
-                        "z": -24.374963760376
-                    },
-                    "angle": {
-                        "x": 1.01328063011169,
-                        "y": 104.793060302734,
-                        "z": 5.33691917325996e-08
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 2,
-                    "position": {
-                        "x": 92.8250198364258,
-                        "y": -3.76487970352173,
-                        "z": -49.5470809936523
-                    },
-                    "angle": {
-                        "x": 0.14373192191124,
-                        "y": 192.582946777344,
-                        "z": -1.66753189034807e-09
-                    },
-                    "waitTime": 10,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 3,
-                    "position": {
-                        "x": 84.5440368652344,
-                        "y": -3.86023616790771,
-                        "z": -86.6459197998047
-                    },
-                    "angle": {
-                        "x": 0.14373192191124,
-                        "y": 192.582946777344,
-                        "z": -1.66753189034807e-09
-                    },
-                    "waitTime": 30,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "09d1de47-4f48-463b-a8b9-cd8e7db7209d",
-            "variant": "Sedan",
-            "type": 2,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": 52.0705070495605,
-                    "y": -2.88061308860779,
-                    "z": -13.3084354400635
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            "behaviour": {
-                "name": "NPCWaypointBehaviour",
-                "parameters": {
-                    "isLaneChange": false,
-                    "maxSpeed": 0
-                }
-            },
-            "color": {
-                "r": 0.619607746601105,
-                "g": 0.556862771511078,
-                "b": 0.462745070457459
-            },
-            "waypoints": []
-        },
-        {
-            "uid": "09be0069-7cdc-44ee-8303-554f45041061",
-            "variant": "Deer",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -23.0989036560059,
-                    "y": -1.64933633804321,
-                    "z": 0.473870277404785
-                },
-                "rotation": {
-                    "x": 1.11098337173462,
-                    "y": 105.276817321777,
-                    "z": 5.33708863770244e-08
-                }
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": -18.6951713562012,
-                        "y": -1.69837272167206,
-                        "z": 2.53157377243042
-                    },
-                    "angle": {
-                        "x": 3.2680721282959,
-                        "y": 179.914443969727,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": -18.6930923461914,
-                        "y": -1.7778605222702,
-                        "z": 1.13950824737549
-                    },
-                    "angle": {
-                        "x": 357.038818359375,
-                        "y": 275.588134765625,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 2,
-                    "position": {
-                        "x": -28.6471061706543,
-                        "y": -1.26049721240997,
-                        "z": 2.11342334747314
-                    },
-                    "angle": {
-                        "x": 357.540130615234,
-                        "y": 267.550415039063,
-                        "z": 1.06820124301521e-07
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 3,
-                    "position": {
-                        "x": -30.6177616119385,
-                        "y": -1.17576205730438,
-                        "z": 2.02911949157715
-                    },
-                    "angle": {
-                        "x": 357.540130615234,
-                        "y": 267.550415039063,
-                        "z": 1.06820124301521e-07
-                    },
-                    "waitTime": 0,
-                    "speed": 3,
-                    "trigger": {
-                        "effectors": [
-                            {
-                                "typeName": "WaitTime",
-                                "parameters": {
-                                    "value": 30
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "c3053873-1214-4585-8565-0c8bc4a660a0",
-            "variant": "Howard",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -22.4015159606934,
-                    "y": -1.78289222717285,
-                    "z": -1.1723370552063
-                },
-                "rotation": {
-                    "x": 0.797935605049133,
-                    "y": 104.467399597168,
-                    "z": -2.66830095796422e-08
-                }
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": 19.5303153991699,
-                        "y": -2.44447684288025,
-                        "z": -10.8477478027344
-                    },
-                    "angle": {
-                        "x": 0.664942383766174,
-                        "y": 127.493286132813,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 1,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": 31.0113563537598,
-                        "y": -2.61241769790649,
-                        "z": -19.6553192138672
-                    },
-                    "angle": {
-                        "x": 0.850353479385376,
-                        "y": 104.568374633789,
-                        "z": -5.33667297020202e-08
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 2,
-                    "position": {
-                        "x": 313.605987548828,
-                        "y": -6.94618368148804,
-                        "z": -93.0991897583008
-                    },
-                    "angle": {
-                        "x": 0.850353479385376,
-                        "y": 104.568374633789,
-                        "z": -5.33667297020202e-08
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": [
-                            {
-                                "typeName": "WaitTime",
-                                "parameters": {
-                                    "value": 30
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "53149134-463f-449f-9e5a-4f5527664ab0",
-            "variant": "Turkey",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -20.9761581420898,
-                    "y": -1.62267851829529,
-                    "z": 2.15124893188477
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": -26.4374961853027,
-                        "y": -1.13730204105377,
-                        "z": 4.01840591430664
-                    },
-                    "angle": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 6,
-                    "trigger": {
-                        "effectors": []
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "e0b66f8e-bb7b-4add-9b8d-94847393e769",
-            "variant": "Bill",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -21.1338138580322,
-                    "y": -1.76227962970734,
-                    "z": 0.133079767227173
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": -30.3950595855713,
-                        "y": -1.75690054893494,
-                        "z": -22.1808261871338
-                    },
-                    "angle": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 1,
-                    "trigger": {
-                        "effectors": [
-                            {
-                                "typeName": "WaitTime",
-                                "parameters": {
-                                    "value": 10
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "f7cd2f1f-e282-44dd-b66f-fd2d9c6fc053",
-            "variant": "Bob",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -21.2064189910889,
-                    "y": -1.78845524787903,
-                    "z": -0.284868240356445
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": -30.0872573852539,
-                        "y": -1.77121305465698,
-                        "z": -22.1883583068848
-                    },
-                    "angle": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 1,
-                    "trigger": {
-                        "effectors": [
-                            {
-                                "typeName": "WaitTime",
-                                "parameters": {
-                                    "value": 10
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "6e88e2c4-4f91-4be5-af47-86757b3c560d",
-            "variant": "EntrepreneurFemale",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": -19.5141525268555,
-                    "y": -1.81642937660217,
-                    "z": -0.169196128845215
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            },
-            "waypoints": [
-                {
-                    "ordinalNumber": 0,
-                    "position": {
-                        "x": 1.69080352783203,
-                        "y": -1.97204506397247,
-                        "z": -6.5178656578064
-                    },
-                    "angle": {
-                        "x": 1.34341490268707,
-                        "y": 99.7079925537109,
-                        "z": 0
-                    },
-                    "waitTime": 10,
-                    "speed": 1,
-                    "trigger": {
-                        "effectors": []
-                    }
-                },
-                {
-                    "ordinalNumber": 1,
-                    "position": {
-                        "x": 18.8752479553223,
-                        "y": -2.38089752197266,
-                        "z": -9.45772361755371
-                    },
-                    "angle": {
-                        "x": 1.34341490268707,
-                        "y": 99.7079925537109,
-                        "z": 0
-                    },
-                    "waitTime": 0,
-                    "speed": 1,
-                    "trigger": {
-                        "effectors": []
-                    }
-                }
-            ]
-        },
-        {
-            "uid": "f2d8c745-fd84-4f3a-995c-8c8018d4b492",
-            "variant": "Robin",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": 47.4657859802246,
-                    "y": -2.56772398948669,
-                    "z": -51.873348236084
-                },
-                "rotation": {
-                    "x": 0.735141634941101,
-                    "y": 112.431671142578,
-                    "z": 0
-                }
-            },
-            "waypoints": []
-        },
-        {
-            "uid": "912cf66f-818e-4e1c-ab0c-18c27e5bbbe4",
-            "variant": "Stephen",
-            "type": 3,
-            "parameterType": "",
-            "transform": {
-                "position": {
-                    "x": 48.3305053710938,
-                    "y": -2.59880471229553,
-                    "z": -52.2303161621094
-                },
-                "rotation": {
-                    "x": 0.735141634941101,
-                    "y": 112.431671142578,
-                    "z": 0
-                }
-            },
-            "waypoints": []
         }
     ],
     "controllables": [
@@ -948,45 +76,14 @@
         },
         {
             "uid": "d3f49ec7-0c8f-447d-85d0-fb492dacada5",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "4087a726-ad47-4f95-a0eb-3709b6c7f670",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "730eded5-4c33-4141-9b1d-6c7d7a6708f3",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "14520767-36f7-4417-bd9a-fe0fdc4923c4",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "10465566-a498-43bd-9650-26d989884a4a",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "9e1dce77-debd-4688-aa76-1fca06e6a666",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "6e74cdb6-dd20-4592-bf25-9d596a02457e",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "7c991710-b786-4bc6-b87d-20370b7cffa6",
             "policy": [
                 {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
                     "action": "wait",
-                    "value": "6"
+                    "value": "8"
                 },
                 {
                     "action": "state",
@@ -1002,7 +99,167 @@
                 },
                 {
                     "action": "wait",
-                    "value": "10"
+                    "value": "8"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "4087a726-ad47-4f95-a0eb-3709b6c7f670",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "730eded5-4c33-4141-9b1d-6c7d7a6708f3",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "14520767-36f7-4417-bd9a-fe0fdc4923c4",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "10465566-a498-43bd-9650-26d989884a4a",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "9e1dce77-debd-4688-aa76-1fca06e6a666",
+            "policy": [],
+            "spawned": false
+        },
+        {
+            "uid": "6e74cdb6-dd20-4592-bf25-9d596a02457e",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "7c991710-b786-4bc6-b87d-20370b7cffa6",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
                 }
             ],
             "spawned": false
@@ -1019,15 +276,14 @@
         },
         {
             "uid": "f7a2d27c-f50b-409a-a477-c39b4fd3a422",
-            "policy": [],
-            "spawned": false
-        },
-        {
-            "uid": "2625825d-18bb-4c34-8848-6f3a2eb84336",
             "policy": [
                 {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
                     "action": "wait",
-                    "value": "6"
+                    "value": "8"
                 },
                 {
                     "action": "state",
@@ -1043,181 +299,100 @@
                 },
                 {
                     "action": "wait",
-                    "value": "10"
+                    "value": "8"
+                }
+            ],
+            "spawned": false
+        },
+        {
+            "uid": "2625825d-18bb-4c34-8848-6f3a2eb84336",
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
                 }
             ],
             "spawned": false
         },
         {
             "uid": "a34f995f-30aa-4e46-8fc8-159de508b2e1",
-            "policy": [],
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                }
+            ],
             "spawned": false
         },
         {
             "uid": "2d07c8ec-6cf6-4c39-bff3-1b8b44a2e4fd",
-            "policy": [],
+            "policy": [
+                {
+                    "action": "state",
+                    "value": "red"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                },
+                {
+                    "action": "state",
+                    "value": "yellow"
+                },
+                {
+                    "action": "wait",
+                    "value": "1"
+                },
+                {
+                    "action": "state",
+                    "value": "green"
+                },
+                {
+                    "action": "wait",
+                    "value": "8"
+                }
+            ],
             "spawned": false
-        },
-        {
-            "uid": "fbb22c7c-d72b-4577-85a8-a5ab6145926e",
-            "policy": [
-                {
-                    "action": "state",
-                    "value": ""
-                }
-            ],
-            "spawned": true,
-            "name": "TrafficCone",
-            "transform": {
-                "position": {
-                    "x": 23.6408081054688,
-                    "y": -2.45119142532349,
-                    "z": -16.8194618225098
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            }
-        },
-        {
-            "uid": "acd324d1-0dfa-41b1-a16b-0496de886d40",
-            "policy": [
-                {
-                    "action": "state",
-                    "value": "off"
-                }
-            ],
-            "spawned": true,
-            "name": "ChargingStation",
-            "transform": {
-                "position": {
-                    "x": 22.7901458740234,
-                    "y": -2.42532896995544,
-                    "z": -15.8564682006836
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            }
-        },
-        {
-            "uid": "1f56bf8b-c7f0-48c6-8fbc-bf5f5c26fc8f",
-            "policy": [
-                {
-                    "action": "state",
-                    "value": "off"
-                }
-            ],
-            "spawned": true,
-            "name": "TriggerZone",
-            "transform": {
-                "position": {
-                    "x": 25.5491180419922,
-                    "y": -2.4841046333313,
-                    "z": -18.175422668457
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            }
-        },
-        {
-            "uid": "1274de72-9204-4b62-bca1-cd6072a0cec8",
-            "policy": [
-                {
-                    "action": "state",
-                    "value": "off"
-                }
-            ],
-            "spawned": true,
-            "name": "ChargingStation",
-            "transform": {
-                "position": {
-                    "x": 51.5598220825195,
-                    "y": -2.41075277328491,
-                    "z": -17.0581607818604
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            }
-        },
-        {
-            "uid": "84de8457-1618-44b8-a266-cfdebb97c283",
-            "policy": [
-                {
-                    "action": "state",
-                    "value": ""
-                }
-            ],
-            "spawned": true,
-            "name": "TrafficCone",
-            "transform": {
-                "position": {
-                    "x": 21.0842819213867,
-                    "y": -2.47142195701599,
-                    "z": -24.1122665405273
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            }
-        },
-        {
-            "uid": "12b80702-0425-4769-802e-05261b86212a",
-            "policy": [
-                {
-                    "action": "state",
-                    "value": ""
-                }
-            ],
-            "spawned": true,
-            "name": "TrafficCone",
-            "transform": {
-                "position": {
-                    "x": 20.9161643981934,
-                    "y": -2.47394847869873,
-                    "z": -24.9000625610352
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            }
-        },
-        {
-            "uid": "cd4abc93-8669-482e-9b9e-f419b4caae46",
-            "policy": [
-                {
-                    "action": "state",
-                    "value": ""
-                }
-            ],
-            "spawned": true,
-            "name": "TrafficCone",
-            "transform": {
-                "position": {
-                    "x": 21.0340805053711,
-                    "y": -2.48309516906738,
-                    "z": -25.9717330932617
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                }
-            }
         }
     ]
 }
