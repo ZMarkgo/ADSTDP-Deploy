@@ -4,53 +4,28 @@
 
 此仓库的文件夹层级和项目中`wj/local_test`的层级一致，这样可以简化Path类的路径配置。
 
-```txt
-D:.
-├─dist
-│  └─static
-│      ├─css
-│      ├─fonts
-│      ├─img
-│      │  └─carousel
-│      └─js
-├─log
-├─pyscript
-├─resources
-│  ├─accidents_library
-│  ├─scenarios_library
-│  ├─scenarios_userupload
+```shell
+ADSTDP-Deploy
+├─dist          # 前端项目的部署文件，通过nginx部署
+├─wj-1.0.0.jar  # 后端项目的部署文件，通过java启动，我们的项目中使用`runjar.sh`脚本启动
+├─test
+│  └─runpy.sh   # 启动仿真测试的脚本
+├─log           # 网站运行的日志文件： 
+│  ├─log.txt    # log.txt模拟测试使用的日志（无效）
+│  ├─runpy.out  # 启动测试的shell脚本和shell脚本启动的python脚本的日志
+│  └─runjar.out # 使用`runjar.sh`脚本启动jar包时，这个文件会记录jar包的日志
+├─resources               # 资源目录
+│  ├─accidents_library    # 模拟测试的事故场景位置（无效）
+│  ├─scenarios_library    # 场景库中场景json文件
+│  ├─scenarios_userupload # 用户上传的场景json文件
 │  └─videos
-│      ├─accident_videos
-│      └─scenario_videos
-└─test
+│      └─scenario_videos  # 场景库中场景视频文件位置
+└─script           # 其他脚本文件
+   ├─jsoncheck     # 校验用户上传的json文件的脚本
+   └─startnovnc.sh # 启动novnc服务（服务器投影）的脚本     
 ```
 
-
 `README.md`：此文件
-
-ADSTDP项目的部署文件：
-- `dist`文件夹：前端项目的部署文件，通过nginx部署
-- `wj-1.0.0.jar`：后端项目的部署文件，通过java启动
-
-模拟测试，`SimulutionTest`文件夹，其中：
-- `SimulutionTest/runpy.sh`脚本： 
-  - 由java（后端）启动
-  - 这个脚本本身会启动我们要调用的python脚本，并使其在后端不中断运行
-  - 在这个脚本内部可以设置：
-    - 脚本输出重定向的路径`runpyOutPath`，默认为重定向到log/runpy.out
-    - 需要调用的python脚本的路径`pyScriptPath`
-    - 给python脚本传递的参数`logfilePath`、`originallogfilePath`
-- `SimulutionTest/createLog.py`文件：目前用于模拟测试的python脚本，会产生log.txt文件
-- `SimulutionTest/log-original.txt`文件：用于模拟测试
-
-日志记录，log文件夹：
-- `log/log.txt`文件：
-  - 测试产生的日志（目前由`reateLog.py`模拟写入日志），后端需要这个文件的路径，需要同步到网站的后端
-- `log/runpy.out`文件：
-  - 记录`SimulutionTest/runpy.sh`脚本的输出（其中也包含`SimulutionTest/createLog.py`的输出）
-  - 如果`SimulutionTest/runpy.sh`脚本运行出错，错误记录也会输出到此
-- `log/runjar.out`文件：
-  - 如果使用`runjar.sh`脚本启动jar包，这个文件会记录jar包springboot的输出
 
 `runjar.sh`脚本：
 - 后台不中断执行jar包的脚本
@@ -66,12 +41,6 @@ nohup java -jar wj-1.0.0.jar > log/runjar.out 2>&1 &;
   - 2：stderr (standard error)
   - `2>&1`是将标准错误（2）重定向到标准输出（&1），标准输出（&1）再被重定向输入到log/runjar.out文件中
 - 尾部添加了`&` 表示后台运行nohup命令，即使关掉终端，命令也不会结束。
-
-`videos`文件夹：
-- 存放视频资源，需要使用文件夹分类
-- 目前分为：
-  - 场景视频scenario_videos
-  - 事故视频accident_videos
 
 ## 二、项目部署指南：
 
